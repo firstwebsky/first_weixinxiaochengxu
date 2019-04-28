@@ -1,0 +1,34 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <!-- 轮播图 -->
+  <view class='banner'>
+    <swiper autoplay interval='2000' indicator-dots indicator-active-color="#fff" indicator-color="rgba(255,255,255,.5)">
+      <block wx:for="{{bannerList}}" wx:key="item.zid">
+        <swiper-item>
+          <image class='bannerImg' src="{{item.img_url}}" lazy-load></image>
+          </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 六个模块 -->
+  <view class='sixModule'>
+    <view class='sixModuleCon' wx:for="{{iconList}}" wx:key="index">
+      <image class='sixModulePic' src='{{item.img_url}}' bindtap='hand' data-id='{{item.zid}}'></image>
+      <view class='sixModuleTitle'>{{item.title}}</view>
+    </view>
+  </view>
+  <!-- 内容列表 -->
+  <view class='listCon'>
+    <view class='listCon_box' wx:for="{{listCon}}" wx:key="index">
+      <view class='listImg_box'>
+        <image class='listImg' src='{{item.img_url}}' bindtap='handDetails' data-id='{{item.zid}}'>
+        </image>  
+      </view>
+      <view class='listCon_details'>
+        <view class='listCon_title'>{{item.z_title}}</view>
+        <view class='listCon_price'>￥{{item.z_price}}/人/起</view>
+        <view class='listCon_addr'>{{item.z_addr}}</view>
+      </view>
+    </view>
+  </view>
+</view>

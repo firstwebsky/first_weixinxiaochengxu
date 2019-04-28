@@ -1,0 +1,18 @@
+<!--pages/zanList1/zanList1.wxml-->
+<!-- 内容列表 -->
+<view class='container'>
+  <view></view>
+  <view class='listCon'>
+    <view class='listCon_box' wx:for="{{listCon}}" wx:key="index">
+      <view class='listImg_box'>
+        <image class='listImg' src='{{item.img_url}}'>
+        </image>  
+      </view>
+      <view class='listCon_details'>
+        <view class='listCon_title'>{{item.z_title}}</view>
+        <view class='listCon_price'>￥{{item.z_price}}/人/起</view>
+        <view class='listCon_addr'>{{item.z_addr}}</view>
+      </view>
+    </view>
+  </view>
+</view>

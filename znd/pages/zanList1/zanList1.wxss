@@ -1,0 +1,35 @@
+/* pages/zanList1/zanList1.wxss */
+/* 内容列表 */
+.listCon{
+  background: #ECEAEB;
+}
+.listCon_box{
+  padding-top: 44rpx;
+}
+.listImg_box{
+  height: 306rpx;
+  padding:0 24rpx;
+}
+.listCon_box .listImg{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+.listCon_details{
+  background: #fff;
+  padding: 24rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.listCon_title{
+  line-height: 40rpx;
+  font-weight: bold;
+}
+.listCon_price{
+  padding: 20rpx 0;
+}
+.listCon_addr{
+  padding: 20rpx 0;
+  border-top: 1px dashed #999;
+}

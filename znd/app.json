@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/proDetail/proDetail",
+    "pages/zanList1/zanList1",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#182128",
+    "navigationBarTitleText": "赞那度旅行",
+    "navigationBarTextStyle": "white"
+  }
+}

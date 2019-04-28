@@ -1,0 +1,28 @@
+<!--pages/proDetail/proDetail.wxml-->
+<view class='container'>
+  <!-- 轮播图 -->
+  <view class='banner'>
+    <swiper autoplay interval='3000' indicator-dots indicator-active-color="#fff" indicator-color="rgba(255,255,255,.5)">
+      <block wx:for="{{bannerList}}" wx:key="item.zid">
+        <swiper-item>
+          <image class='bannerImg' src="{{item.img_url}}" lazy-load></image>
+          </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 轻奢小团 -->
+  <view class='pro_title'>
+    <image class='pro_title_img' src='../img/pro1.png'></image>
+  </view>
+  <view class='proCon'>
+    <view class='proCon_title'>
+      【轻奢小团】2019日本九州5天4晚春樱染粉之旅——暖意渐浓，漫樱飞雪（北京出发）
+    </view>
+    <view class='proCon_title1'>
+      相约赏樱名所，乐享温泉美食，于粉白花树间纵情捕捉春の气息
+    </view>
+    <view class='proCon_title3'>
+      浪漫春日 赏最美樱花
+    </view>
+  </view>
+</view>
